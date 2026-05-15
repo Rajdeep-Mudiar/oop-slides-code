@@ -1,3 +1,4 @@
+//Important need to rewatch again
 #include <iostream>
 #include <new>
 using namespace std;
@@ -59,7 +60,7 @@ int main(){
 
     catch(bad_alloc xa){
         cout<<"Allocation failed"<<endl;
-        retun 1;
+        return 1;
     }
 
     //initialize dynamic array with powers of two

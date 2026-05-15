@@ -26,7 +26,7 @@ student::student(int no,string n,double f){
 }
 
 void student::display(){
-    cout<<endl<<rno<<"\t"<<name<<"\t"<<fee;
+    cout<<endl<<"Roll No: "<<rno<<"\t"<<"Name:"<<name<<"\t"<<"fee: "<<fee;
 }
 int main(){
     student s(1001,"Virat",10000);

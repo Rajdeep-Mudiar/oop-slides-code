@@ -13,7 +13,7 @@ int main(){
     cl ob(1);
     int *p;
 
-    p=&ob.i //get address of ob.i
+    p=&ob.i ;//get address of ob.i
     cout<<*p;
 
     return 0;

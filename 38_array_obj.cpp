@@ -15,7 +15,7 @@ class cl{
         int get_h(){
             return h;
         }
-}
+};
 int main(){
     cl ob[3]={
         cl(1,2),
@@ -25,7 +25,7 @@ int main(){
 
     int i;
     for(i=0;i<3;i++){
-        cout<<ob[i].get_h()<<", "<<ob[i].get_i<<endl;
+        cout<<ob[i].get_h()<<", "<<ob[i].get_i()<<endl;
     }
     return 0;
 }

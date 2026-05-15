@@ -9,7 +9,7 @@ int multiply(){
 }
 
 void print(int (*funcptr)()){
-    cout<<"The value of the product is :"<<funcptr<<endl;
+    cout<<"The value of the product is :"<<funcptr()<<endl;
 }
 int main(){
     print(multiply);

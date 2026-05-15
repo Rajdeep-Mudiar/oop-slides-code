@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 int myfunc(int i);//these differ in no of parameters
 int myfunc(int i,int j);
 

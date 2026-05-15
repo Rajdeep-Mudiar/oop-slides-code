@@ -12,7 +12,7 @@ class cl{
         int get_i(){
             return i;
         }
-}
+};
 int main(){
     cl ob[3]={1,2,3}; //initializers
     int i;

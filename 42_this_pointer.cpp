@@ -26,12 +26,12 @@ pwr::pwr(double base,int exp){
         val=val*b;
     }
 
-    int main(){
-        pwr x(4.0,2), y(2.5,1),z(5.7,0);
-        cout<<x.get_pwr()<<" ";
-        cout<<y.get_pwr()<<" ";
-        cout<<z.get_pwr()<<endl;
+}
+int main(){
+    pwr x(4.0,2), y(2.5,1),z(5.7,0);
+    cout<<x.get_pwr()<<" ";
+    cout<<y.get_pwr()<<" ";
+    cout<<z.get_pwr()<<endl;
 
-        return 0;
-    }
+    return 0;
 }

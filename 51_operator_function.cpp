@@ -21,7 +21,7 @@ class loc{
 //Overload + for loc
 loc loc::operator+(loc op2){
     loc temp;
-    temp.longitude=op2.longitude + latitude;
+    temp.longitude=op2.longitude + longitude;
     temp.latitude=op2.latitude + latitude;
     return temp;
 }
