@@ -2,29 +2,54 @@
 using namespace std;
 
 class Complex{
+
     float real;
     float imag;
 
-    public:
-        void setNumber(float a,float b){
-            this->real=a;
-            this->imag=b;
-        }
+public:
 
-        void show(Complex ob1,Complex ob2);
+    void setNumber(float a,float b){
+
+        this->real = a;
+        this->imag = b;
+    }
+
+    void show(){
+
+        cout<<real<<" + "<<imag<<"i"<<endl;
+    }
+
+    Complex operator+(Complex ob);
 };
 
-void Complex::show(Complex ob1,Complex ob2){
-    cout<<"First complex number: "<<ob1.real<<"+ "<<ob1.imag<<"i"<<endl;
-    cout<<"Second complex number: "<<ob2.real<<"+ "<<ob2.imag<<"i"<<endl;
+// Overload + operator
+Complex Complex::operator+(Complex ob){
+
+    Complex temp;
+
+    temp.real = real + ob.real;
+    temp.imag = imag + ob.imag;
+
+    return temp;
 }
 
 int main(){
+
     Complex a1,a2,a3;
 
     a1.setNumber(11,12);
     a2.setNumber(3,4);
-    a1.show(a1,a2);
-    a3=a1+a2;
+
+    cout<<"First complex number: ";
+    a1.show();
+
+    cout<<"Second complex number: ";
+    a2.show();
+
+    a3 = a1 + a2;
+
+    cout<<"Addition: ";
+    a3.show();
+
     return 0;
 }
