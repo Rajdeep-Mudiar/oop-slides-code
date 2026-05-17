@@ -24,7 +24,7 @@ class derived: public base{
             cout<<"Constructing derived"<<endl;
         }
 
-        ~(derived){
+        ~derived(){
             cout<<"Destructing derived"<<endl;
         }
 

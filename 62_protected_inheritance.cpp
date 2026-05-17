@@ -30,11 +30,16 @@ class ProtectedDerived:protected Base{
             return pub;
 
         }
+
+        int getpv(){
+            return getPVT();
+        }
 };
 
 int main(){
     ProtectedDerived object1;
     cout<<"Private cannot be accessed."<<endl;
+    cout<<"Private = "<<object1.getpv()<<endl;
     cout<<"Protected = "<<object1.getProt()<<endl;
     cout<<"Public = "<<object1.getPub()<<endl;
 

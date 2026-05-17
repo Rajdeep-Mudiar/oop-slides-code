@@ -12,8 +12,8 @@ class loc{
         }
 
         void show(){
-            cout<<longitude<<" ";
-            cout<<latitude<<endl;
+            cout<<"longitude: "<<longitude<<endl;
+            cout<<"latitude: "<<latitude<<endl;
         }
 
         friend loc operator +(loc op1,loc op2);

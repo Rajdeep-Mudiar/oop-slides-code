@@ -15,7 +15,7 @@ class CompareString{
                 return 1;
             }
             else{
-                retun 0;
+                return 0;
             }
         }
 

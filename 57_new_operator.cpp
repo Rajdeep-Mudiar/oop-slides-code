@@ -12,11 +12,11 @@ int main(){
 
     cout<<"Value of pointer variable 1: "<<*ptr1<<endl;
     cout<<"Value of pointer variable 2: "<<*ptr2<<endl;
-
+    
     if(!ptr3){
         cout<<"Allocation of memory failed"<<endl;
     }
-
+    
     else{
         for(int i=10;i<15;i++){
             ptr3[i]=i+1;
@@ -26,10 +26,10 @@ int main(){
             cout<<ptr3[i]<<" ";
         }
     }
-
+    
     delete ptr1;
     delete ptr2;
-
+    
     delete[] ptr3;
 
     return 0;

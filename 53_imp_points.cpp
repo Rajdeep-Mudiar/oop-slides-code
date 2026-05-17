@@ -20,8 +20,8 @@ class Complex{
         }
 };
 
-void Complex::show(Complex obj){
-    cout<<"First complex number: "<<ob.real<<"+"<<ob.imag<<"i"<<endl;
+void Complex::show(Complex ob){
+    cout<<"First complex number: "<<ob.real<<" + "<<ob.imag<<"i"<<endl;
 }
 int main(){
     Complex a1,a2,a3;
